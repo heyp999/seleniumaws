@@ -234,6 +234,7 @@ def check_we_logged_in_with_new_cred():
 
 
 def delete_test_user():
+    sleep(1)
     driver.find_element(By.XPATH, '//span[contains(., "Site administration")]').click()
     sleep(0.25)
     assert driver.find_element(By.LINK_TEXT, 'Users').is_displayed()
